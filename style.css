@@ -1,0 +1,144 @@
+/* Configurações Gerais e Cores (Paleta Azul) */
+        :root {
+            --azul-escuro: #0B2545;
+            --azul-medio: #134074;
+            --azul-principal: #1D4ED8;
+            --azul-claro: #8DA9C4;
+            --azul-fundo: #EEF4F8;
+            --branco: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--azul-fundo);
+            color: var(--azul-escuro);
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho (Header) */
+        header {
+            background-color: var(--azul-escuro);
+            color: var(--branco);
+            padding: 2rem 1rem;
+            text-align: center;
+            border-bottom: 4px solid var(--azul-claro);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: var(--azul-claro);
+            font-weight: 500;
+        }
+
+        /* Menu de Navegação */
+        nav {
+            background-color: var(--azul-medio);
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            display: inline-block;
+            color: var(--branco);
+            padding: 1rem 1.5rem;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background-color: var(--azul-principal);
+        }
+
+        /* Banner Principal */
+        .hero {
+            background: linear-gradient(rgba(11, 37, 69, 0.8), rgba(19, 64, 116, 0.8));
+            color: var(--branco);
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+        }
+
+        /* Conteúdo Principal */
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .secao {
+            background-color: var(--branco);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            border-left: 5px solid var(--azul-principal);
+        }
+
+        .secao h3 {
+            color: var(--azul-medio);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        /* Grid de Cards (Animais e Práticas) */
+        .grid-animais {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .card {
+            background-color: var(--azul-fundo);
+            border: 1px solid var(--azul-claro);
+            border-radius: 6px;
+            padding: 1.5rem;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h4 {
+            color: var(--azul-escuro);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Rodapé (Footer) */
+        footer {
+            background-color: var(--azul-escuro);
+            color: var(--branco);
+            text-align: center;
+            padding: 1.5rem 1rem;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            color: var(--azul-claro);
+        }
